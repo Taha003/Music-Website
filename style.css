@@ -1,0 +1,292 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: black;
+    font-family: "Roboto",sans-serif;
+}
+
+.white{
+    color: white;
+}
+.grey{
+  color: grey;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+.invert{
+    filter: invert(1);
+}
+
+.nav{
+    width: 100%;
+    padding: 10px;
+    height: 10vh;
+}
+
+
+
+  .search-box{
+    width: 300px;
+    /* background-color: aquamarine; */
+    /* padding: 10px; */
+    padding: 7px;
+    border-radius: 10px;
+  }
+  .search-box input{
+    background-color: inherit;
+    border: none;
+    /* display: inline-block; */
+    font-size: 18px;
+  }
+
+  .bg-gray{
+   background-color: #1f1f1f;
+  }
+  .g-6{
+    gap:8px
+  }
+
+  .g-4{
+    gap:4px
+  }
+
+  .g-10{
+    gap:10px
+  }
+
+  .m-10{
+    margin: 10px;
+  }
+
+  .b-0{
+    bottom: 0;
+  }
+
+  .list-none{
+    list-style-type: none;
+  }
+
+  .main-container{
+    width: 100%;
+    height: 90vh;
+    gap: 2px;
+    
+  }
+  .relative{
+    position: relative;
+  }
+  .absolute{
+    position:absolute
+  }
+
+  .sidebar{
+    width: 30%;
+    /* background-color: red; */
+  }
+  .songs{
+    width: 70%;
+    /* height: 85vh; */
+  }
+  .song-bar{
+    width: 100%;
+    background-color: #121212;
+    max-height: 70vh;
+    overflow-y: scroll;
+  }
+
+  .library{
+    /* margin-right: 10px; */
+    padding: 10px;
+    background-color: #121212;
+    height:90vh;
+    /* width: 30%; */
+   
+  }
+
+  .library-heading{
+    font-size: 22px;
+    color: white;
+  }
+
+ .p-10{
+  padding: 10px;
+ }
+
+ .song-card{
+  width: 190px;
+  padding: 7px;  
+  transition: 1s ease-out;
+  
+  
+ }
+
+ .song-card img{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 7%;
+ }
+
+
+.play-icon{
+  /* display: none; */
+  /* bottom: 0%; */
+  bottom: 30%;
+  right: 14px;
+  opacity: 0%;
+  transition: 1s ease-out;
+}
+
+.song-card:hover{
+  .play-icon{
+    display: block;
+    bottom: 30%;
+    right: 14px;
+    opacity: 90%;
+  }
+  cursor: pointer;
+  background-color: #2c2c2c;
+  border-radius: 7%;
+}
+
+.sidebar-footer{
+  color: grey;
+  flex-wrap: wrap;
+  position: absolute;
+  list-style-type: none;
+  gap: 2px;
+  bottom: 0;
+  font-size: 10px;
+}
+.sidebar-footer > *{
+  padding: 4px;
+}
+
+
+/* Apply styles to the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  background-color: #2c2c2c; /* Background color of the scrollbar track */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #555; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777; /* Color when hovering over the thumb */
+}
+
+/* Optional: Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #2c2c2c; /* Background color of the scrollbar track */
+}
+
+.signup-btn button{
+  padding: 8px;
+  border-radius: 16%;
+  font-size: 16px;
+}
+.signup-btn>*:first-child{
+  background: none;
+  color: white;
+  border:none
+}
+.signup-btn>*:nth-child(2){
+  border: none;
+  font-weight: bold;
+
+}
+
+.playbar{
+
+  width: 100%;
+
+  bottom:0;
+  padding: 20px 10px 2px 10px;  
+  background-color: #141614
+
+
+}
+
+.playbar-buttons img{
+  cursor: pointer;
+  transition-duration: 3s;
+  transition: ease-in-out;
+}
+.playbar-buttons img:hover{
+  scale: 1.2;
+  font-weight:bolder;
+}
+
+.playbar-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.list-item{
+  display: flex;
+  /* justify-content: space-around; */
+  padding: 7px 24px;
+  align-items: center;
+  /* width: 344px; */
+  gap: 8px;
+  /* height: 70vh; */
+  font-size: 14px;
+}
+.list-item img{
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid white; */
+}
+.library-songs{
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.play-icon1{
+  margin-left: auto;
+  
+}
+
+.seekbar{
+  width: 100%;
+  height: 4px;
+  background-color:  #212a21;
+  margin-top: 8px;
+  padding: 20px 0px 0p 10px;
+  /* padding: 20px 10px 20px 10px;   */
+}
+.circle{
+  width: 12px;
+  height: 12px;
+  border-radius: 30px;
+  position: relative;
+  background-color: white;
+  left: 0px;
+    bottom: 8px;
+  
+
+}

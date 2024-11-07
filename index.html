@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav white flex items-center space-between">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./Assets/logo.svg" alt="logo" class="invert" />
+      </div>
+      <!-- Search Box -->
+      <div class="search flex g-6">
+        <img
+          class="homeImg invert"
+          src="./Assets/homelogo.svg"
+          alt=""
+          srcset=""
+          width="20px"
+        />
+        <!-- <input type="text" placeholder="What do you want to play"> -->
+        <div class="search-box bg-gray flex items-center g-4">
+          <div class="search-icon">
+            <img src="./Assets/search.svg" alt="" class="invert" width="20px" />
+          </div>
+          <input type="text" placeholder="What to listen?" />
+          <div
+            class="cart-icon"
+            style="border-left: 2px solid whitesmoke; padding-left: 4px"
+          >
+            <img src="./Assets/cart.svg" class="invert" width="20px" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Login Details -->
+      <div class="login-details flex g-4">
+        <img src="./Assets/install.svg" alt="" width="20px" class="invert" />
+        <h4 style="font-size: bold; color: white">Install App</h4>
+        <img
+          src="./Assets/bell.svg"
+          alt=""
+          class="invert"
+          width="20px"
+          style="margin-left: 6px"
+        />
+      </div>
+      <!-- Signup/Signin -->
+      <div class="signup-btn flex g-4">
+        <button>Sign Up</button>
+        <button>Sign In</button>
+      </div>
+    </div>
+    <!-- Main -->
+    <div class="main-container flex">
+      <div class="sidebar relative">
+        <div class="library">
+          
+          <div class="library-heading  g-6">
+            
+            <div class="flex g-4">
+              
+              <img
+                src="./Assets/library.svg"
+                alt=""
+                class="invert"
+                style="width: 20px"
+              />
+              <div><p>Your Library</p></div>
+            
+            </div>
+            
+            <div>
+             
+              <ul class="library-songs">
+                
+
+              
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar-footer flex">
+            <li>Legal</li>
+            <li>Safety & Privacy Center</li>
+            <li>Privacy Policy</li>
+            <li>Cookies</li>
+            <li>About Ads</li>
+            <li>Accessibility</li>
+          </div>
+        </div>
+      </div>
+      <div class="songs relative">
+
+        <div class="song-bar  white p-10 relative">
+          <h2>Spotify Playlist</h2>
+          <div class="cards white flex wrap g-10">
+            <div class="song-card relative">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55"
+                alt=""
+              />
+              <h4>JO TUM MERE HO</h4>
+              <p class="grey">Anuv Jain</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                width="48"
+                height="48"
+                class="absolute play-icon"
+              >
+                <circle cx="24" cy="24" r="20" fill="green" />
+                <polygon points="20,16 20,32 32,24" fill="white" />
+              </svg>
+            </div>
+            
+          </div>
+      </div>
+      <div class="playbar white absolute">
+        <div class="playbar-buttons">
+          <img src="./Assets/playback.svg" alt="">
+          <img src="./Assets/play.svg" alt="">
+          <img src="./Assets/playnext.svg" alt="">
+        </div>
+        <div class="seekbar">
+
+        </div>
+        <div class="circle">
+
+        </div>
+      </div>
+      
+  </div>
+
+ 
+</div>
+     
+      </div>
+      
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
